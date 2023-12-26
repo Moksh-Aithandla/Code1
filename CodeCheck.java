@@ -59,7 +59,7 @@ switch (choice)
   break;
  
 }//end of switch
-if (choice!=9)
+if (choice>6)
 {
   System.out.println();
   System.out.println();
@@ -209,7 +209,7 @@ public void interior_emulsion()
     System.out.println("5.Light red");
     System.out.println("6.Light orange"); 
     System.out.println("7.Return to main menu");
-    System.out.println("Entre your choice");
+    System.out.println("Enter your choice");
     choice=in.nextInt();
     switch(choice)
     {
@@ -308,11 +308,11 @@ public void nails()
     
     
     Scanner in=new Scanner(System.in);
-    System.out.println("1.      2inch");
-    System.out.println("2.      2.5inch");
-    System.out.println("3.      3inch");
-    System.out.println("4.      4inch");
-    System.out.println("        Enter your choice");
+    System.out.println("1. 2inch");
+    System.out.println("2. 2.5inch");
+    System.out.println("3. 3inch");
+    System.out.println("4. 4inch");
+    System.out.println("Enter your choice");
     choice=in.nextInt();
     switch(choice)
     {
@@ -400,22 +400,22 @@ public void brushes()
         case 1:title="1 inch";
         System.out.println("Enter number of brushes reqired");
         quantity=in.nextDouble();
-        price=60;
+        price=20;
         break;
         case 2:title="2 inch";
         System.out.println("Enter number of brushes reqired");
         quantity=in.nextDouble();
-        price=70;
+        price=40;
         break;
         case 3:title="3 inch";
         System.out.println("Enter number of brushes reqired");
         quantity=in.nextDouble();
-        price=80;
+        price=60;
         break;
         case 4:Main_Menu();
         break;
         default:System.out.println("You have entered a wrong choice");
-                System.out.println("please enter a nymber between 1-4");
+                System.out.println("please enter a number between 1-4");
         break;
 
     }
